@@ -1,0 +1,74 @@
+:root {
+    --bs-slate: #1e293b;
+    --bs-teal: #0f766e;
+    --bs-wa-green: #25d366;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    background-color: #f8fafc;
+    color: #334155;
+}
+
+.bg-slate { background-color: var(--bs-slate) !important; }
+.text-slate { color: var(--bs-slate) !important; }
+.text-teal { color: var(--bs-teal) !important; }
+
+.btn-whatsapp {
+    background-color: var(--bs-wa-green);
+    color: #ffffff;
+    border: none;
+}
+.btn-whatsapp:hover {
+    background-color: #1ebc57;
+    color: #ffffff;
+}
+
+/* Floating WhatsApp CTA */
+.floating-whatsapp {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background-color: var(--bs-wa-green);
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 32px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease;
+    text-decoration: none;
+}
+.floating-whatsapp:hover {
+    transform: scale(1.1);
+    color: white;
+}
+
+/* Custom Card Layouts */
+.product-card {
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    background: #ffffff;
+    overflow: hidden;
+}
+.product-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+.product-card .card-img-container {
+    height: 220px;
+    overflow: hidden;
+    position: relative;
+    background-color: #f1f5f9;
+}
+.product-card .card-img-container img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
